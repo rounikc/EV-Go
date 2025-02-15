@@ -1,7 +1,6 @@
 import { Text, View, StyleSheet, Image, TouchableOpacity, ActivityIndicator } from "react-native";
-import { StatusBar } from "expo-status-bar";
 import * as WebBrowser from 'expo-web-browser';
-import { useSSO, useOAuth, useUser } from "@clerk/clerk-expo";
+import { useOAuth, useUser } from "@clerk/clerk-expo";
 import { useCallback, useEffect, useState } from "react";
 import { SplashScreen, useRouter } from "expo-router";
 import * as Linking from "expo-linking";
