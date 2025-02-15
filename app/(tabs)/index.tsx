@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 import AppMapView from '@/assets/utils/AppMapView';
-import HomeHeader from './HomeHeader';
+import HomeHeader from '../Headers/HomeHeader';
 
 export default function tabsindex() {
   return (
