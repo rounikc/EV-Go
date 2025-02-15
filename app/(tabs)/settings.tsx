@@ -2,13 +2,14 @@ import { SignedIn, useClerk } from "@clerk/clerk-expo";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function SettingsScreen() {
-    const {signOut, user} = useClerk();
+     const {signOut, user} = useClerk();
     
     return (
-        <View style={styles.container}>
+        <View style={styles.containermain}>
             <SignedIn>
-                <Text>Email: {user?.emailAddresses[0]?.emailAddress}</Text>
-                <Text>Name: {user?.fullName}</Text>
+                <Text>This is Settings </Text>
+                <Text>Email: {user?.emailAddresses[0]?.emailAddress}  </Text>
+                <Text>Name: {user?.fullName} </Text>
                 <Button title="Logout" onPress={() => signOut()}/>
             </SignedIn>
         </View>
@@ -16,9 +17,8 @@ export default function SettingsScreen() {
 }
 
 const styles = StyleSheet.create({
-    container: {
+    containermain: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-    }
+        backgroundColor: '#fff',
+      }
 })
